@@ -1,4 +1,4 @@
-# Skin Cancer Classification using Segmented Lesion Images
+# Skin Cancer Classification using Segmented Lesion Images (HAM10000)
 
 A deep learning project for skin cancer classification using advanced preprocessing techniques, U-Net segmentation, and DenseNet201 transfer learning on the HAM10000 dataset.
 
