@@ -67,6 +67,8 @@ segmented-classification-model/
 
 #### **Step 1.2: Dull Razor Algorithm**
 Applied the Dull Razor algorithm to remove hair artifacts from dermoscopic images:
+<img width="1052" height="288" alt="Screenshot 2025-11-18 155440" src="https://github.com/user-attachments/assets/3b196e7d-95bc-44d7-beef-70ca14a0606f" />
+
 
 **Algorithm Steps:**
 1. **Grayscale Conversion**: Convert RGB image to grayscale
@@ -86,6 +88,8 @@ Applied the Dull Razor algorithm to remove hair artifacts from dermoscopic image
 - **Validation Set**: 15%
 - **Test Set**: 15%
 - Used stratified splitting to maintain class distribution across all sets
+<img width="1489" height="390" alt="image (3)" src="https://github.com/user-attachments/assets/c969a2f2-447e-4540-b1bc-b5ed94f82df2" />
+
 
 ### 2. U-Net Segmentation Model
 
@@ -130,6 +134,8 @@ Built a custom U-Net architecture for precise lesion segmentation:
 - **Test Accuracy**: ~91%+
 - **Test Dice Coefficient**: ~0.91+
 - **Test IoU**: ~0.83+
+  <img width="1280" height="448" alt="image" src="https://github.com/user-attachments/assets/6e59934c-8676-47ad-9869-e79881ecad1f" />
+
 
 **Key Achievement:** The U-Net model successfully learned to segment skin lesions with high precision, enabling accurate extraction of lesion regions from dermoscopic images.
 
@@ -139,6 +145,10 @@ After training, the U-Net model was used to:
 2. Apply masks to original images to isolate lesion regions
 3. Create a new segmented dataset with only the important lesion areas
 4. This focused approach helps the classification model concentrate on relevant features
+<img width="766" height="145" alt="image_2025-11-19_14-41-20" src="https://github.com/user-attachments/assets/c78e32c1-332a-4d12-9ef3-785bb648f102" />
+<img width="397" height="150" alt="image_2025-11-19_14-42-43" src="https://github.com/user-attachments/assets/8ab22cce-e20f-42f9-9fc1-10e94e56a615" />
+
+
 
 ### 3. DenseNet201 Classification Model
 
@@ -208,6 +218,7 @@ Utilized transfer learning with DenseNet201:
 | VASC | 0.85-0.90 | 0.80-0.85 | 0.82-0.87 | ~21 |
 
 ## Results Summary
+<img width="1189" height="390" alt="image (4)" src="https://github.com/user-attachments/assets/a97830a1-c078-47c3-b58d-6c6e2d07f87f" />
 
 ### Achievements
 
